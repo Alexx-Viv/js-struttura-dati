@@ -19,6 +19,9 @@ var card = {
       launchCost: ["R", "T"],
       describtion: "lorem...",
     },
+    {
+      ability: "Questa carta fa cose",
+    }
   ],
   illustrator: {
     author: {
@@ -39,8 +42,8 @@ let subType = card.subType ? card.subType : "";
 let abilitiesContent = "<em>Nessuna abilità</em>";
 if (card.abilities.length) {
   abilitiesContent = "<ul>";
-  for (let i = 0; i < card.abilieties; i++) {
-    const currentAbility = card.abilieties[i];
+  for (let i = 0; i < card.abilities.length; i++) {
+    const currentAbility = card.abilities[i];
     abilitiesContent += "--";
     abilitiesContent += "<li>Descrizione: ${currentAbility.description}</li>";
     (abilitiesContent +=
