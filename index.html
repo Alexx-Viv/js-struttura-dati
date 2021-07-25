@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div id="cards">CARTA</div>
+    <select id="filter">
+      <option selected value="all">Tutte</option>
+      <option  value="id">Id</option>
+      <option  value="name">Nome</option>
+      <option  value="combinedManaCost">CMC</option>
+      <option  value="cardType">Tipo</option>
+      <option  value="constitution">Costituzione</option>
+      <option  value="strength">Forza</option>
+    </select>
+    <input type="text" id="search" placeholder="Scrivi..." class="hidden">
+    <button id="button">Filtra</button>
+    <hr>
+    <section id="cards"></section>
     <script src="./js/app.js"></script>
   </body>
 </html>
